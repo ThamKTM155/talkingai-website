@@ -1,1 +1,266 @@
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TalkingAI - Trợ lý AI hỗ trợ người dùng tiếp cận thông tin và công cụ trí tuệ nhân tạo.">
+  <meta name="theme-color" content="#101827">
+  <title>TalkingAI | Trợ lý AI</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101827;
+      --panel: #182438;
+      --text: #f3f6fc;
+      --muted: #b8c4d8;
+      --accent: #80e0cb;
+      --line: #334158;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 90px 0 76px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.7rem);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin: 18px auto;
+      max-width: 850px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 20px auto;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      margin-top: 16px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #10202b;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    section { padding: 46px 0; }
+
+    h2 {
+      font-size: clamp(1.7rem, 4vw, 2.3rem);
+      line-height: 1.25;
+    }
+
+    .intro { color: var(--muted); max-width: 760px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .card h3 { margin-top: 0; }
+    .card p { color: var(--muted); margin-bottom: 0; }
+
+    .privacy {
+      border-top: 1px solid var(--line);
+      margin-top: 28px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 560px) {
+      .hero { padding: 60px 0 42px; }
+      .nav-links { gap: 12px; }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Điều hướng chính">
+      <a class="brand" href="#home">Talking<span>AI</span></a>
+      <div class="nav-links">
+        <a href="#about">Giới thiệu</a>
+        <a href="#features">Chức năng</a>
+        <a href="#privacy">Quyền riêng tư</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="eyebrow">Trợ lý trí tuệ nhân tạo</div>
+      <h1>Chào mừng đến với TalkingAI</h1>
+      <p>
+        TalkingAI hướng tới việc giúp người dùng tiếp cận các công cụ
+        trí tuệ nhân tạo một cách dễ hiểu, hữu ích và có trách nhiệm.
+      </p>
+      <a class="button" href="#about">Khám phá TalkingAI</a>
+    </section>
+
+    <section class="container" id="about">
+      <h2>Về TalkingAI</h2>
+      <p class="intro">
+        TalkingAI là dự án trợ lý AI được phát triển nhằm hỗ trợ người dùng
+        trong việc tìm hiểu thông tin và sử dụng các công cụ AI.
+        Website này cung cấp thông tin về dự án và các chính sách liên quan.
+      </p>
+    </section>
+
+    <section class="container" id="features">
+      <h2>Định hướng phát triển</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Hỗ trợ bằng AI</h3>
+          <p>
+            Hướng tới trải nghiệm tương tác với trí tuệ nhân tạo
+            rõ ràng và dễ tiếp cận.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Thông tin minh bạch</h3>
+          <p>
+            Cung cấp thông tin về dự án, cách sử dụng dịch vụ
+            và các chính sách dành cho người dùng.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Quan tâm quyền riêng tư</h3>
+          <p>
+            Hướng tới việc xử lý dữ liệu có trách nhiệm,
+            phù hợp với chức năng và chính sách được công bố.
+          </p>
+        </article>
+      </div>
+      <p class="intro">
+        Lưu ý: các nội dung trên mô tả định hướng của dự án,
+        không phải cam kết rằng mọi chức năng đã được triển khai.
+      </p>
+    </section>
+
+    <section class="container privacy" id="privacy">
+      <h2>Quyền riêng tư</h2>
+      <p class="intro">
+        Chúng tôi coi trọng quyền riêng tư của người dùng.
+        Trước khi sử dụng các chức năng có xử lý dữ liệu cá nhân
+        hoặc truy cập tài khoản bên thứ ba, người dùng cần được
+        cung cấp thông tin rõ ràng về dữ liệu được thu thập,
+        mục đích sử dụng, thời gian lưu giữ, việc chia sẻ và cách
+        yêu cầu xóa dữ liệu.
+      </p>
+      <p class="intro">
+        Chính sách này cần được hoàn thiện và xác nhận theo đúng
+        cách TalkingAI thực tế vận hành trước khi công bố chính thức.
+        Trang giới thiệu này chưa thay thế một chính sách quyền riêng
+        tư đầy đủ.
+      </p>
+    </section>
+
+    <section class="container" id="contact">
+      <h2>Liên hệ</h2>
+      <p class="intro">
+        Nếu cần trao đổi về TalkingAI, vui lòng liên hệ nhóm phát triển
+        qua địa chỉ hỗ trợ được công bố khi dịch vụ sẵn sàng.
+      </p>
+      <p class="intro">
+        Thông tin liên hệ chính thức sẽ được bổ sung trước khi mở dịch vụ
+        cho người dùng bên ngoài.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>TalkingAI · Website thông tin chính thức</div>
+      <div>© <span id="year">2026</span> TalkingAI</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
+
