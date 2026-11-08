@@ -148,6 +148,41 @@
       font-size: 0.92rem;
     }
 
+    .legacy-banner {
+      width: min(1080px, 90%);
+      margin: 28px auto 0;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 16px;
+      background: linear-gradient(120deg, #182438, #1b3045);
+    }
+
+    .legacy-banner .legacy-label {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .legacy-banner h2 {
+      margin: 8px 0;
+    }
+
+    .legacy-banner p {
+      color: var(--muted);
+      max-width: 850px;
+    }
+
+    .legacy-banner .legacy-reminder {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .legacy-banner .button {
+      margin-top: 8px;
+    }
+
     @media (max-width: 560px) {
       .hero { padding: 60px 0 42px; }
       .nav-links { gap: 12px; }
@@ -167,6 +202,14 @@
       </div>
     </nav>
   </header>
+
+  <section class="legacy-banner" aria-labelledby="legacy-title">
+    <div class="legacy-label">TẦM NHÌN SÁNG LẬP · DI SẢN SỐ</div>
+    <h2 id="legacy-title">THAM AI – DIGITAL LEGACY</h2>
+    <p>Một đời người – Một kho tri thức – Một người bạn đồng hành – Một di sản cho thế hệ mai sau.</p>
+    <p class="legacy-reminder">Không chạy theo số lượng tính năng. Không làm việc nọ xọ việc kia. Bảo vệ thành quả đã có, ghi nhớ đúng, làm từng bước và hoàn thành những việc có giá trị.</p>
+    <a class="button" href="digital-legacy.html">Đọc di sản số của người sáng lập</a>
+  </section>
 
   <main>
     <section class="hero container" id="home">
